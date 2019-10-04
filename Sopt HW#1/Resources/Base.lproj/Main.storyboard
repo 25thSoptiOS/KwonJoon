@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SOH-9R-RoE">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Soptstagram-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Soptstagram" id="BYZ-38-t0r" customClass="ViewController" customModule="Sopt_HW_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Soptstagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWY-UE-9nl">
+                                <rect key="frame" x="86" y="44" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XrS-i2-3tN">
+                                <rect key="frame" x="30" y="118" width="26" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XrS-i2-3tN" secondAttribute="height" multiplier="13:10" id="Wfo-Eg-VKg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sopt.iOS.LOVER님이 좋아합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaN-2v-v7G">
+                                <rect key="frame" x="70" y="605" width="235" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GRX-fo-gnv">
+                                <rect key="frame" x="10" y="601" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ras-5g-r8P">
+                                <rect key="frame" x="0.0" y="184" width="375" height="372"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="372" id="6L4-cl-DVl"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sopt.iOS.LOVER" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkU-gJ-0SS">
+                                <rect key="frame" x="70" y="135" width="123" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pkU-gJ-0SS" firstAttribute="top" secondItem="LWY-UE-9nl" secondAttribute="bottom" constant="70" id="8ah-lS-tu3"/>
+                            <constraint firstItem="ras-5g-r8P" firstAttribute="top" secondItem="XrS-i2-3tN" secondAttribute="bottom" constant="46" id="AN0-GB-iPi"/>
+                            <constraint firstItem="vaN-2v-v7G" firstAttribute="firstBaseline" secondItem="GRX-fo-gnv" secondAttribute="firstBaseline" id="AU9-Ni-TRp"/>
+                            <constraint firstItem="ras-5g-r8P" firstAttribute="centerX" secondItem="LWY-UE-9nl" secondAttribute="centerX" id="BcV-pM-GfO"/>
+                            <constraint firstAttribute="trailing" secondItem="ras-5g-r8P" secondAttribute="trailing" id="Egj-DJ-XdJ"/>
+                            <constraint firstItem="GRX-fo-gnv" firstAttribute="top" secondItem="ras-5g-r8P" secondAttribute="bottom" constant="45" id="Jm3-p2-xLS"/>
+                            <constraint firstItem="XrS-i2-3tN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="KkT-af-kJE"/>
+                            <constraint firstItem="GRX-fo-gnv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="O2o-fr-2s2"/>
+                            <constraint firstItem="XrS-i2-3tN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="OpG-b4-iCr"/>
+                            <constraint firstItem="ras-5g-r8P" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="184" id="TvQ-h5-h29"/>
+                            <constraint firstItem="pkU-gJ-0SS" firstAttribute="leading" secondItem="XrS-i2-3tN" secondAttribute="trailing" constant="14" id="cj5-yW-SYa"/>
+                            <constraint firstItem="ras-5g-r8P" firstAttribute="centerX" secondItem="vaN-2v-v7G" secondAttribute="centerX" id="mUI-fH-baG"/>
+                            <constraint firstItem="ras-5g-r8P" firstAttribute="top" secondItem="pkU-gJ-0SS" secondAttribute="bottom" constant="29" id="re3-Gt-GAq"/>
+                            <constraint firstItem="LWY-UE-9nl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="70" id="uic-D7-7p4"/>
+                            <constraint firstItem="ras-5g-r8P" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="y0o-tZ-k0q"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Soptstagram" id="PIB-al-9th"/>
+                    <connections>
+                        <outlet property="joayo" destination="vaN-2v-v7G" id="M80-8x-a3v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1082.4000000000001" y="120.44334975369459"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="J2V-aq-Ftk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="SOH-9R-RoE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r2S-Eh-3aH">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="2I1-82-94i"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTH-8C-Xpv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="120.44334975369459"/>
+        </scene>
+    </scenes>
+</document>
