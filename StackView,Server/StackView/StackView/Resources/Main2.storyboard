@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bannerview Controller-->
+        <scene sceneID="idD-WM-CFK">
+            <objects>
+                <viewController storyboardIdentifier="Main2" id="BuO-xJ-557" customClass="BannerviewController" customModule="StackView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sd1-K1-Ln5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tht-Se-sBK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxr-cq-mi9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="2000"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YjK-rR-gL7" userLabel="BannerCV">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="217"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KXY-65-Peo">
+                                                    <size key="itemSize" width="414" height="209"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCell" id="vou-iA-WG4" customClass="BannerCell" customModule="StackView" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="4" width="414" height="209"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="taJ-fw-Gfz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainImage" translatesAutoresizingMaskIntoConstraints="NO" id="537-T9-9gv" userLabel="Banner">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="209"/>
+                                                                </imageView>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="537-T9-9gv" secondAttribute="trailing" id="Bjb-sH-cfy"/>
+                                                                <constraint firstItem="537-T9-9gv" firstAttribute="top" secondItem="taJ-fw-Gfz" secondAttribute="top" id="Ofa-0J-jlf"/>
+                                                                <constraint firstAttribute="bottom" secondItem="537-T9-9gv" secondAttribute="bottom" id="quL-Hg-Tpb"/>
+                                                                <constraint firstItem="537-T9-9gv" firstAttribute="leading" secondItem="taJ-fw-Gfz" secondAttribute="leading" id="rMB-wm-4DB"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="414" height="209"/>
+                                                        <connections>
+                                                            <outlet property="banner" destination="537-T9-9gv" id="IaE-DL-h8u"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                            </collectionView>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PU8-TV-86R" customClass="CHIPageControlAleppo" customModule="CHIPageControl">
+                                                <rect key="frame" x="20" y="20" width="71" height="37"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="numberOfPages">
+                                                        <integer key="value" value="3"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                        <real key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="dxr-cq-mi9" firstAttribute="height" secondItem="Bn9-qm-Ege" secondAttribute="height" priority="250" id="4g9-1H-MEW"/>
+                                    <constraint firstItem="tSm-K4-qND" firstAttribute="trailing" secondItem="dxr-cq-mi9" secondAttribute="trailing" id="4gM-MP-xHV"/>
+                                    <constraint firstItem="dxr-cq-mi9" firstAttribute="width" secondItem="Bn9-qm-Ege" secondAttribute="width" id="7dU-wT-5fM"/>
+                                    <constraint firstItem="dxr-cq-mi9" firstAttribute="leading" secondItem="tSm-K4-qND" secondAttribute="leading" id="7td-GA-7wY"/>
+                                    <constraint firstItem="dxr-cq-mi9" firstAttribute="top" secondItem="tSm-K4-qND" secondAttribute="top" id="ZZu-55-JJO"/>
+                                    <constraint firstItem="tSm-K4-qND" firstAttribute="bottom" secondItem="dxr-cq-mi9" secondAttribute="bottom" id="heD-hA-D9m"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="Bn9-qm-Ege"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="tSm-K4-qND"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tht-Se-sBK" firstAttribute="trailing" secondItem="YdG-yQ-2My" secondAttribute="trailing" id="LeG-DT-7Ke"/>
+                            <constraint firstItem="tht-Se-sBK" firstAttribute="leading" secondItem="YdG-yQ-2My" secondAttribute="leading" id="OwJ-Kg-FSe"/>
+                            <constraint firstAttribute="bottom" secondItem="tht-Se-sBK" secondAttribute="bottom" id="cE8-bS-KeD"/>
+                            <constraint firstItem="tht-Se-sBK" firstAttribute="top" secondItem="Sd1-K1-Ln5" secondAttribute="top" id="fnI-MB-5ZY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YdG-yQ-2My"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="2000"/>
+                    <connections>
+                        <outlet property="bannerCV" destination="YjK-rR-gL7" id="yhW-CY-YsK"/>
+                        <outlet property="paging" destination="PU8-TV-86R" id="JLb-c6-lp0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A8d-DV-Z3y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.19999999999999" y="-108.84557721139431"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="o6A-6o-E3E">
+            <objects>
+                <viewController id="LRv-ZJ-LVH" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XYl-us-Jwj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="WHO-ZM-6Md"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xt9-Wc-TEs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="966" y="-708"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="4Tl-2N-Fm2">
+            <objects>
+                <viewController id="EV0-U6-6nw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Yw2-Eu-ju6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lzb-4e-6dx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="xEz-PC-nbA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AhN-Cr-tDH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600.8000000000002" y="-708.39580209895053"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="VcD-VN-IEi">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="naz-ug-Bh3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Dgt-de-gNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="EV0-U6-6nw" kind="relationship" relationship="viewControllers" id="Vdy-8L-vgE"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LUo-5r-27t" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1661.5999999999999" y="-708.39580209895053"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mainImage" width="414" height="209"/>
+    </resources>
+</document>
