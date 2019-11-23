@@ -22,7 +22,7 @@
 		04CF55F8236D450100E77F3D /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF55F7236D450100E77F3D /* LoginService.swift */; };
 		04CF55FA236D5D4800E77F3D /* SignupService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF55F9236D5D4800E77F3D /* SignupService.swift */; };
 		04CF55FC236D5EA500E77F3D /* ResposeDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CF55FB236D5EA500E77F3D /* ResposeDefault.swift */; };
-		04DEEC9D23880A8600C5CA30 /* ResponseString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEEC9C23880A8600C5CA30 /* ResponseString.swift */; };
+		04DEEC9D23880A8600C5CA30 /* ResponseString2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEEC9C23880A8600C5CA30 /* ResponseString2.swift */; };
 		04DEEC9F23880B9400C5CA30 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DEEC9E23880B9400C5CA30 /* ViewController2.swift */; };
 		9AC66E299278A792FE3939CB /* Pods_StackView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73361AFB562CF7D9A8BF15B /* Pods_StackView.framework */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		04CF55F7236D450100E77F3D /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		04CF55F9236D5D4800E77F3D /* SignupService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupService.swift; sourceTree = "<group>"; };
 		04CF55FB236D5EA500E77F3D /* ResposeDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResposeDefault.swift; sourceTree = "<group>"; };
-		04DEEC9C23880A8600C5CA30 /* ResponseString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseString.swift; sourceTree = "<group>"; };
+		04DEEC9C23880A8600C5CA30 /* ResponseString2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseString2.swift; sourceTree = "<group>"; };
 		04DEEC9E23880B9400C5CA30 /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 		126EC50CE8683C9BAAF4D94C /* Pods-StackView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackView.debug.xcconfig"; path = "Target Support Files/Pods-StackView/Pods-StackView.debug.xcconfig"; sourceTree = "<group>"; };
 		2A9EBAC0AA0A4426B96092B6 /* Pods-StackView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackView.release.xcconfig"; path = "Target Support Files/Pods-StackView/Pods-StackView.release.xcconfig"; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 			children = (
 				04CF55F9236D5D4800E77F3D /* SignupService.swift */,
 				04CF55FB236D5EA500E77F3D /* ResposeDefault.swift */,
-				04DEEC9C23880A8600C5CA30 /* ResponseString.swift */,
+				04DEEC9C23880A8600C5CA30 /* ResponseString2.swift */,
 			);
 			path = SignupService;
 			sourceTree = "<group>";
@@ -281,7 +281,7 @@
 				04CF55FC236D5EA500E77F3D /* ResposeDefault.swift in Sources */,
 				0435D8BD2351AF1B00531503 /* AppDelegate.swift in Sources */,
 				04CF55F6236D436200E77F3D /* ResponseString.swift in Sources */,
-				04DEEC9D23880A8600C5CA30 /* ResponseString.swift in Sources */,
+				04DEEC9D23880A8600C5CA30 /* ResponseString2.swift in Sources */,
 				0407E3DA23641D3D00851197 /* BannerCell.swift in Sources */,
 				0407E3DE2364218E00851197 /* BannerviewController.swift in Sources */,
 				04DEEC9F23880B9400C5CA30 /* ViewController2.swift in Sources */,
