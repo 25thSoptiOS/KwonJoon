@@ -8,5 +8,6 @@ target 'GS25_WITHSOPT' do
   # Pods for GS25_WITHSOPT
 
 pod 'XLPagerTabStrip'
+pod 'Alamofire', '~> 4.8.2'
 
 end
